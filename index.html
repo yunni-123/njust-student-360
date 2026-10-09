@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NJUST 学生全景档案 AI Agent ｜ NJUST 院校管理决策系统</title>
+<meta name="description" content="NJUST 学生全景档案 AI Agent 与 NJUST 院校管理决策系统：面向高校学生工作的一体化数智化系统。校长、教务处、辅导员、学生四端协同，一人一档、学业预警、任务下发与反馈闭环，数据真实落库、跨端实时同步，AI 智能体提供学业与就业建议。">
+<meta name="keywords" content="NJUST 学生全景档案 AI Agent,NJUST 院校管理决策系统,学生全景档案,院校管理决策系统,高校学生工作,学生画像,学业预警,辅导员工作助手,一人一档,NJUST">
+<meta name="author" content="NJUST 学生全景档案项目">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#0b1220">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NJUST 学生全景档案 AI Agent">
+<meta property="og:title" content="NJUST 学生全景档案 AI Agent ｜ NJUST 院校管理决策系统">
+<meta property="og:description" content="校长、教务处、辅导员、学生四端协同的高校学生工作数智化系统：一人一档、学业预警、任务下发与反馈闭环，AI 智能体提供学业与就业建议。">
+<meta property="og:image" content="assets/w6-entry.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://YOUR-DOMAIN/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "NJUST 学生全景档案 AI Agent",
+      "url": "https://YOUR-DOMAIN/",
+      "inLanguage": "zh-CN",
+      "description": "NJUST 学生全景档案 AI Agent 与 NJUST 院校管理决策系统的官方介绍页。"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "NJUST 学生全景档案 AI Agent",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "zh-CN",
+      "description": "面向学生本人的一人一档 AI 成长档案：我的档案、简历、学校任务、学业预警、六维能力、就业推荐、消息与 AI 成长助手，共 8 个页面。",
+      "featureList": "一人一档；学业预警透明化；六维能力画像；岗位匹配推荐；任务与通知接收；AI 成长助手"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "NJUST 院校管理决策系统",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "zh-CN",
+      "description": "面向校长、教务处、辅导员三级的院校学生工作决策支持系统：全校态势统览、学院风险榜、短板科目分析、整改任务下发与帮扶台账回传闭环。",
+      "featureList": "全校态势一屏统览；学院风险横向对比；短板科目排行；整改任务下发；帮扶台账与周报回传"
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#0b1220; --panel:#111827; --card:#1b2537; --line:rgba(148,163,184,.22);
+  --txt:#E5E7EB; --muted:#9CA3AF; --accent:#60A5FA; --accent2:#7fd9ec;
+  --ok:#34d399; --warn:#fbbf24; --danger:#f87171; --radius:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--txt);
+  font-family:'PingFang SC','Microsoft YaHei','Hiragino Sans GB',system-ui,-apple-system,sans-serif;
+  line-height:1.75;-webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+header.top{
+  border-bottom:1px solid var(--line);background:rgba(11,18,32,.92);
+  position:sticky;top:0;z-index:20;backdrop-filter:saturate(140%) blur(6px);
+}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:62px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.2px}
+.brand .dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 0 12px rgba(96,165,250,.7)}
+nav.top a{color:var(--muted);font-size:14px;margin-left:18px}
+nav.top a:hover{color:var(--txt)}
+.hero{padding:64px 0 40px;border-bottom:1px solid var(--line)}
+.eyebrow{display:inline-block;font-size:13px;color:var(--accent2);border:1px solid rgba(127,217,236,.35);border-radius:999px;padding:4px 12px;margin-bottom:18px}
+h1{font-size:40px;line-height:1.28;margin:0 0 16px;font-weight:800;letter-spacing:.3px}
+h1 .grad{background:linear-gradient(100deg,#7fd9ec,#60A5FA 55%,#a78bfa);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:17px;color:var(--muted);max-width:820px;margin:0 0 26px}
+.lead strong{color:var(--txt);font-weight:600}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+.btn{display:inline-block;padding:11px 20px;border-radius:10px;font-size:15px;font-weight:600;border:1px solid var(--line);color:var(--txt);background:var(--card)}
+.btn.primary{background:linear-gradient(135deg,#2563eb,#60A5FA);border-color:transparent;color:#fff}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:8px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.kpi b{display:block;font-size:24px;color:#fff;line-height:1.3}
+.kpi span{font-size:13px;color:var(--muted)}
+section{padding:52px 0;border-bottom:1px solid var(--line)}
+h2{font-size:26px;margin:0 0 10px;font-weight:750}
+h2 .tick{display:inline-block;width:26px;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:2px;vertical-align:middle;margin-right:10px}
+.sub{color:var(--muted);margin:0 0 24px;max-width:840px}
+.h3{font-size:18px;font-weight:700;margin:0 0 8px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.card.hl{border-color:rgba(96,165,250,.45);box-shadow:0 0 0 1px rgba(96,165,250,.12) inset}
+.card p{color:var(--muted);margin:0 0 12px}
+ul.clean{list-style:none;padding:0;margin:0}
+ul.clean li{position:relative;padding-left:20px;margin:9px 0;color:var(--muted)}
+ul.clean li::before{content:"";position:absolute;left:4px;top:11px;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+ul.clean li b{color:var(--txt);font-weight:600}
+.tag{display:inline-block;font-size:12px;color:var(--accent2);border:1px solid rgba(127,217,236,.3);border-radius:6px;padding:2px 9px;margin:0 6px 6px 0}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}
+figure{margin:0;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+figure img{display:block;width:100%;height:auto;background:#0e1626}
+figcaption{padding:12px 16px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+table{width:100%;border-collapse:collapse;font-size:14.5px;margin-top:6px}
+th,td{text-align:left;padding:11px 13px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:#fff;background:rgba(96,165,250,.14);font-weight:600}
+td{color:var(--muted)}
+td b{color:var(--txt)}
+.note{background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.3);border-radius:12px;padding:16px 18px;color:#fde68a;font-size:14.5px}
+footer{padding:34px 0 54px;color:var(--muted);font-size:13.5px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between}
+@media (max-width:760px){
+  h1{font-size:29px}.grid2{grid-template-columns:1fr}nav.top{display:none}
+  section{padding:40px 0}.hero{padding:44px 0 30px}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span><span>NJUST 学生全景档案</span></div>
+    <nav class="top">
+      <a href="#systems">两个系统</a>
+      <a href="#roles">四个端</a>
+      <a href="#ability">系统能力</a>
+      <a href="#shots">界面一览</a>
+      <a href="#demo">演示入口</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <span class="eyebrow">高校学生工作 · 数智化 · 四端协同</span>
+    <h1><span class="grad">NJUST 学生全景档案 AI Agent</span><br>与 NJUST 院校管理决策系统</h1>
+    <p class="lead">
+      一套面向高校学生工作的一体化数智化系统：把<strong>校长、教务处、辅导员、学生</strong>四个角色的数据打通，
+      做到<strong>一人一档、一套数据、三级视图</strong>，任务下发与反馈形成闭环，AI 智能体为每个学生给出学业与就业建议。
+      本页是这两个系统的对外介绍与演示入口页。
+    </p>
+    <div class="cta">
+      <a class="btn primary" href="#demo">查看演示入口</a>
+      <a class="btn" href="#systems">系统介绍</a>
+      <a class="btn" href="#shots">界面截图</a>
+    </div>
+    <div class="kpis">
+      <div class="kpi"><b>4</b><span>个角色端协同</span></div>
+      <div class="kpi"><b>23</b><span>个功能页面</span></div>
+      <div class="kpi"><b>17</b><span>张数据表 · 约 1.07 万行</span></div>
+      <div class="kpi"><b>60</b><span>名学生 · 5 个学院</span></div>
+    </div>
+  </div>
+</div>
+
+<section id="systems">
+  <div class="wrap">
+    <h2><span class="tick"></span>两个系统，一套底座</h2>
+    <p class="sub">
+      <strong>NJUST 学生全景档案 AI Agent</strong> 面向学生本人，<strong>NJUST 院校管理决策系统</strong> 面向管理者；
+      两者共用同一套数据底座与任务通道，学生在手机上看得到的东西，正是辅导员和教务处点一下之后落下去的结果。
+    </p>
+    <div class="grid2">
+      <div class="card hl">
+        <div class="h3">NJUST 学生全景档案 AI Agent</div>
+        <p>面向学生本人的一人一档成长档案。只看得到自己的数据，换别人的学号会被整页拦截。</p>
+        <ul class="clean">
+          <li><b>我的档案</b>：一屏三个数——绩点排名、能力总分、在途预警</li>
+          <li><b>我的简历</b>：学校档案自动填入，可打印导出 PDF、复制为文本</li>
+          <li><b>学校任务</b>：只显示派给我的（含全班 / 全院 / 全校），完成状态同步给派发方</li>
+          <li><b>学业预警</b>：写明触发依据（绩点 / 环比 / 晚归），学生可提交说明申诉</li>
+          <li><b>六维能力与就业</b>：能力画像 + 岗位匹配推荐</li>
+          <li><b>AI 成长助手</b>：由智能体给出学业与就业建议</li>
+        </ul>
+      </div>
+      <div class="card hl">
+        <div class="h3">NJUST 院校管理决策系统</div>
+        <p>面向校长、教务处、辅导员三级的决策支持系统，一屏看风险、一键把任务派下去。</p>
+        <ul class="clean">
+          <li><b>校长端</b>：全校态势统览、学院风险榜（预警数 / 边缘数 / 合格率）、派发议题</li>
+          <li><b>教务处端</b>：各科合格率与环比、问题科目排行、下发整改任务</li>
+          <li><b>辅导员端</b>：困难生名单、帮扶台账、回传记录、一键生成周报</li>
+          <li><b>任务闭环</b>：派出去 → 交回来 → 看得到，状态点「未回灰 / 已回绿 / 逾期红」</li>
+          <li><b>数据同源</b>：换设备、换人打开都是最新状态，不靠刷新</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="roles">
+  <div class="wrap">
+    <h2><span class="tick"></span>四个端，各管一段</h2>
+    <p class="sub">从看数据到派任务再到回传结果，一条链走完，谁也不用再等一份报表。</p>
+    <div class="grid3">
+      <div class="card">
+        <div class="h3">校长端 · 看全校</div>
+        <p>六格关键数字一屏看完，往下能钻到学院，发现短板直接把议题派给该院负责人，派完在行末看状态点。</p>
+      </div>
+      <div class="card">
+        <div class="h3">教务处端 · 抓教学质量</div>
+        <p>各科合格率与环比一目了然，问题科目排行在前；选一门课就能下发整改任务，自动带出对应辅导员。</p>
+      </div>
+      <div class="card">
+        <div class="h3">辅导员端 · 减负</div>
+        <p>自己带的困难学生名单、最近一次帮扶时间、累计次数、下次跟进时间都摆在台账上，回传与周报各点一下。</p>
+      </div>
+      <div class="card">
+        <div class="h3">学生端 · 看自己</div>
+        <p>绩点、预警、能力、岗位一处看全；老师的通知和任务直接收到，点「确认完成」对方页面就更新。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ability">
+  <div class="wrap">
+    <h2><span class="tick"></span>系统能力与技术底座</h2>
+    <p class="sub">不是一堆静态报表，而是一套能算、能判、能派活、能留痕的学生工作系统。</p>
+    <table>
+      <tr><th>能力</th><th>说明</th></tr>
+      <tr><td><b>学业分级</b></td><td>按绩点、挂科、环比变化自动分档，给出预警等级</td></tr>
+      <tr><td><b>心理信号</b></td><td>从行为记录里识别需要关注的学生（仅本人与授权角色可见）</td></tr>
+      <tr><td><b>困难生指数</b></td><td>多维度加权算出困难程度，给资助与帮扶排序</td></tr>
+      <tr><td><b>岗位匹配</b></td><td>按能力画像匹配岗位并打分，给学生可投的清单</td></tr>
+      <tr><td><b>工单时限</b></td><td>任务带期限，逾期自动标红，催办有依据</td></tr>
+      <tr><td><b>AI 智能体</b></td><td>学业助手与就业助手，基于本人数据回答「我现在该做什么」</td></tr>
+      <tr><td><b>数据落库</b></td><td>确认、申诉、回传、派发都真写库，换人打开也能看到</td></tr>
+    </table>
+    <p style="margin-top:18px">
+      <span class="tag">学生全景档案</span><span class="tag">院校管理决策</span><span class="tag">一人一档</span>
+      <span class="tag">学业预警</span><span class="tag">六维能力画像</span><span class="tag">帮扶台账</span>
+      <span class="tag">任务下发与反馈闭环</span><span class="tag">AI Agent</span><span class="tag">数据可视化</span>
+    </p>
+  </div>
+</section>
+
+<section id="shots">
+  <div class="wrap">
+    <h2><span class="tick"></span>界面一览</h2>
+    <p class="sub">下面是 <strong>NJUST 院校管理决策系统</strong> 与 <strong>NJUST 学生全景档案 AI Agent</strong> 的实际界面（演示数据）。</p>
+    <div class="shots">
+      <figure><img src="assets/w6-entry.png" alt="NJUST 学生全景档案 AI Agent 四端入口：一个账号逛四个端" loading="lazy"><figcaption>四端入口：一条链接进去，顶栏随时换端</figcaption></figure>
+      <figure><img src="assets/w1-principal.png" alt="NJUST 院校管理决策系统 校长端：全校总盘与学院风险榜" loading="lazy"><figcaption>校长端：全校总盘 + 学院风险榜</figcaption></figure>
+      <figure><img src="assets/w2-academic.png" alt="NJUST 院校管理决策系统 教务处端：科目态势与下发入口" loading="lazy"><figcaption>教务处端：科目态势 + 下发整改入口</figcaption></figure>
+      <figure><img src="assets/w3-counselor.png" alt="NJUST 院校管理决策系统 辅导员端：帮扶台账与回传、周报" loading="lazy"><figcaption>辅导员端：帮扶台账 + 回传 / 周报</figcaption></figure>
+      <figure><img src="assets/w4-stu-index.png" alt="NJUST 学生全景档案 AI Agent 我的档案" loading="lazy"><figcaption>学生端：我的档案（一人一档）</figcaption></figure>
+      <figure><img src="assets/w5-stu-academic.png" alt="NJUST 学生全景档案 AI Agent 学业预警与成绩明细" loading="lazy"><figcaption>学生端 · 学业：预警透明，可申诉</figcaption></figure>
+      <figure><img src="assets/w7-stu-tasks.png" alt="NJUST 学生全景档案 AI Agent 学校任务" loading="lazy"><figcaption>学生端 · 学校任务：只显示派给我的</figcaption></figure>
+      <figure><img src="assets/w10-stu-archive.png" alt="NJUST 院校管理决策系统 辅导员视图 · 学生档案" loading="lazy"><figcaption>辅导员视图 · 学生档案：成绩 / 画像 / 预警 / 帮扶一处看全</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="demo">
+  <div class="wrap">
+    <h2><span class="tick"></span>演示与说明</h2>
+    <p class="sub">以下为免登录演示入口，数据为<strong> AI 模拟生成的演示数据</strong>，不含任何真实学生信息。</p>
+    <div class="grid2">
+      <div class="card">
+        <div class="h3">NJUST 院校管理决策系统 · 演示</div>
+        <p>校长 / 教务处 / 辅导员三端，含真实数据结构下的全校态势与任务下发回传闭环。</p>
+        <p><a class="btn" href="http://223.111.149.200:33003/share/N0uiyc58cuRUKFgDxNYEcZ3NXNOaeVcFp695kQ2K5w8">进入三端演示 →</a></p>
+      </div>
+      <div class="card">
+        <div class="h3">NJUST 学生全景档案 AI Agent · 演示</div>
+        <p>学生本人视角的 8 个页面：档案、简历、任务、学业、能力、就业、消息与 AI 成长助手。</p>
+        <p><a class="btn" href="http://223.111.149.200:33003/share/NS4E2WMujFJc7DJF_aFiXgKfjoSrDcas1mSzO8crxF8">进入学生端演示 →</a></p>
+      </div>
+    </div>
+    <p class="note" style="margin-top:18px">
+      说明：本页介绍的系统为学生工作数智化演示项目，页面内全部学生数据均由 AI 模拟生成，用于功能演示与教学交流，
+      与任何真实学生信息无关。系统能力与界面以实际演示环境为准。
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>NJUST 学生全景档案 AI Agent ｜ NJUST 院校管理决策系统</div>
+    <div>四端协同 · 一人一档 · 数据驱动 · 演示数据由 AI 模拟生成</div>
+  </div>
+</footer>
+
+</body>
+</html>
